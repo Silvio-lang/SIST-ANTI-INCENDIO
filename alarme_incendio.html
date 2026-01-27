@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruções Técnicas - Silvio</title>
+
+    <script>
+        const CONFIG_SISTEMA = {
+            titulo: "Sistema de Alarme de Incêndio",
+            arquivoContexto: "alarme_incendio.txt"
+        };
+    </script>
+
+    <link rel="stylesheet" href="estilo_global.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js" crossorigin="anonymous"></script>
+    <script src="app_global.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div style="font-size: 0.85rem; margin-bottom: 15px; text-align: left; color: #888;">
+            Consultas nos últimos 60s: <strong id="contador-minuto" style="transition: color 0.3s; color: #4da3ff;">0</strong> / 15
+        </div>
+
+        <div id="admin-panel" style="display: none; margin-bottom: 20px; padding: 15px; border: 1px dashed #aaa; border-radius: 12px; background: #fafafa;">
+            <label style="font-size: 0.8rem; color: #555; display: block; margin-bottom: 5px;">Chave API Gemini:</label>
+            <div style="display: flex; gap: 8px;">
+                <input type="password" id="api-key-input" placeholder="Insira sua chave..." 
+                       style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px;">
+                <button onclick="salvarChaveLocal()" 
+                        style="width: auto; padding: 10px 15px; margin: 0; background: #4a4a4a; color: white; border-radius: 8px; cursor: pointer;">
+                    Salvar
+                </button>
+            </div>
+        </div>
+
+        <h2 id="titulo-dinamico" style="cursor: pointer;">Carregando...</h2>
+        
+        <div class="input-group">
+            <textarea id="pergunta" rows="4" placeholder="Digite sua dúvida técnica aqui..."></textarea>
+        </div>
+
+        <button class="btn-primary" onclick="consultar()">Consultar Sistema</button>
+        <button class="btn-secondary" onclick="salvarHistorico()">Salvar Histórico</button>
+
+        <h3 style="font-size: 1rem; margin-top: 25px; text-align: left;">Resposta:</h3>
+        <div id="resposta">Aguardando inicialização do manual...</div>
+    </div>
+</body>
+</html>

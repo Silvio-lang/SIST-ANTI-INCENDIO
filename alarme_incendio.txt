@@ -1,0 +1,14 @@
+Sobre o sistema de alarme de incêndio:
+O sistema não dispõe de ejetores de água. Um sistema deste tipo custaria bem mais caro e em um ambiente onde circula muitas pessoas leigas, e com critérios populares para manutenção e prevenções, podem ocorrer disparos acidentais ou por desgaste, envelhecimento de sensores, etc.
+Não existem sensores dentro dos apartamentos. Caso haja incêndio dentro de algum deles, para ser disparado um sensor de fumaça, ela (fumaça) deverá passar por debaixo da porta e alcançar o sensor de fumaça que disparará o alarme. Neste caso, os moradores deverão acionar o alarme manualmente, pressionando o botão existente próximo ao elevador.
+Quando houver um disparo, os moradores não devem supor que seja somente um disparo indevido. Devem conferir em todos os andares, dos dois blocos, antes de decidirem silenciar o alarme no painel. Neste caso, logo deve-se emitir mensagens no grupo de WhatsApp do condomínio para que não utilizem o elevador e verifiquem em seus andares se há sinais de incêndio, principalmente fumaça, ou se alguém disparou manualmente o alarme por incêndio dentro do apartamento ou outro local.
+O sistema dispõe de dois painéis de controle e supervisão:
+Ambos estão no andar térreo e cada um próximo ao elevador do bloco.
+Ambos mostram as mesmas informações e se referem aos sensores de todo o condomínio, incluindo os dois blocos.
+No visor, quando houver disparo, estará indicado qual o sensor foi acionado. Deverá estar disponível uma tabela com os números dos sensores, dizendo onde ele se localiza. Esta tabela deverá estar disponível, uma cópia junto a cada painel de supervisão e controle.
+A pessoa que silenciar o alarme sonoro deverá estar ciente doque está fazendo, e caso não saiba se o incêndio é verdadeiro ou não, deverá avisar pelo grupo de WhatsApp para que:
+ NÃO SEJA UTILIZADO O ELEVADOR e 
+TODOS VERIFIQUEM NO SEU ANDAR SE NÃO HÁ SINAIS DE INCÊNDIO.
+NÃO PROVOQUEM PÂNICO E CORRERIAS, PRINCIPALMENTE NAS ESCADAS;
+PRIORIZAR A DESCIDA PARA O TÉRREO, E NÃO A SUBIDA
+Esta tarefa deve ser bem coordenada, evitando informações e atitudes conflitantes.
