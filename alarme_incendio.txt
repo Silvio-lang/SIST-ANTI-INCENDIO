@@ -1,21 +1,58 @@
-Sobre o sistema de alarme de incêndio:
-O sistema não dispõe de ejetores de água. Um sistema deste tipo custaria bem mais caro e em um ambiente onde circula muitas pessoas leigas, e com critérios populares para manutenção e prevenções, podem ocorrer disparos acidentais ou por desgaste, envelhecimento de sensores, etc.
-Não existem sensores dentro dos apartamentos. Caso haja incêndio dentro de algum deles, para ser disparado um sensor de fumaça, ela (fumaça) deverá passar por debaixo da porta e alcançar o sensor de fumaça que disparará o alarme. Neste caso, os moradores deverão acionar o alarme manualmente, pressionando o botão existente próximo ao elevador.
-Quando houver um disparo, os moradores não devem supor que seja somente um disparo indevido. Devem conferir em todos os andares, dos dois blocos, antes de decidirem silenciar o alarme no painel. Neste caso, logo deve-se emitir mensagens no grupo de WhatsApp do condomínio para que não utilizem o elevador e verifiquem em seus andares se há sinais de incêndio, principalmente fumaça, ou se alguém disparou manualmente o alarme por incêndio dentro do apartamento ou outro local.
-O sistema dispõe de dois painéis de controle e supervisão:
-Ambos estão no andar térreo e cada um próximo ao elevador do bloco.
-Ambos mostram as mesmas informações e se referem aos sensores de todo o condomínio, incluindo os dois blocos.
-No visor, quando houver disparo, estará indicado qual o sensor foi acionado. Deverá estar disponível uma tabela com os números dos sensores, dizendo onde ele se localiza. Esta tabela deverá estar disponível, uma cópia junto a cada painel de supervisão e controle.
-A pessoa que silenciar o alarme sonoro deverá estar ciente doque está fazendo, e caso não saiba se o incêndio é verdadeiro ou não, deverá avisar pelo grupo de WhatsApp para que:
- NÃO SEJA UTILIZADO O ELEVADOR e 
-TODOS VERIFIQUEM NO SEU ANDAR SE NÃO HÁ SINAIS DE INCÊNDIO.
-NÃO PROVOQUEM PÂNICO E CORRERIAS, PRINCIPALMENTE NAS ESCADAS;
-PRIORIZAR A DESCIDA PARA O TÉRREO, E NÃO A SUBIDA
-Esta tarefa deve ser bem coordenada, evitando informações e atitudes conflitantes.
-
-Em caso de alarme falso, e com certeza, sem incêndio:
-Seguir as instruções no quadro existente junto ao painel de supervisão.
-Bater uma foto da tela, onde há informações úteis para o pessoal técnico.
-Comunicar a(o) síndico(a) para providenciar o conserto do módulo com defeito.
-Ligar para a empresa de manutenção:   SCI - fone WhatsApp (48)991443159
-
+{
+  "documento": "Especificações e Procedimentos do Sistema de Alarme de Incêndio",
+  "sistema": {
+    "caracteristicas_tecnicas": {
+      "portas_corta_fogo":false,
+      "ejetores_agua": false,
+      "razao_ausencia_ejetores": "Custo elevado; Risco de disparos acidentais em ambiente com circulação de leigos; Desgaste natural de sensores",
+      "sensores_apartamentos": false,
+      "disparo_intra_apartamento": "Fumaça precisa passar sob a porta para ativar sensor no corredor; Mais rápido: morador deve acionar alarme manualmente",
+    },
+    "dispositivos": {
+      "botoes_manual": {
+        "localizacao": "Próximo aos elevadores"
+      },
+      "sensores_fumaca": {
+        "cobertura": "Áreas comuns (exclui interior dos apartamentos)"
+      },
+      "painel_controle": {
+        "quantidade": 2,
+        "localizacao": "Térreo, próximo ao elevador de cada bloco",
+        "funcionalidade": "Controle e supervisão; Exibem informações idênticas; Cobertura total do condomínio (ambos os blocos)"
+      }
+    }
+  },
+  "procedimentos_disparo": {
+    "acao_inicial_moradores": "Não presumir falso alarme; Verificar todos os andares nos dois blocos antes de silenciar",
+    "comunicacao_obrigatoria": {
+      "canal": "Grupo de WhatsApp do condomínio",
+      "mensagens": [
+        "Proibição do uso do elevador",
+        "Solicitação para verificar sinais de incêndio no próprio andar (fumaça ou acionamento manual)"
+      ]
+    },
+    "silenciamento_alarme": {
+      "responsabilidade": "Pessoa que executa deve ter ciência das ações",
+      "condicao_inseguranca": "Enquanto não houver certeza de segurança, comunicar via WhatsApp antes de silenciar",
+      "instrucoes_por WhatsApp": [
+        "NÃO UTILIZAR ELEVADOR",
+        "VERIFICAR SINAIS DE INCÊNDIO NO ANDAR",
+        "EVITAR PÂNICO E CORRERIAS NAS ESCADAS",
+        "PRIORIZAR DESCIDA PARA O TÉRREO (não subir)"
+      ]
+    },
+    "identificacao_origem": {
+      "fonte_informacao": "Visor do painel indica número do sensor acionado",
+      "documentacao_necessaria": "Tabela de identificação deve estar junto a cada painel, relacionando número do sensor à sua localização física"
+    }
+  },
+  "procedimentos_alarme_falso": {
+    "condicao": "Certeza da ausência de incêndio",
+    "passos": [
+      "Seguir instruções no quadro junto ao painel",
+      "Fotografar tela do painel (contém informações técnicas úteis)",
+      "Comunicar ao síndico para acionar reparo do módulo defeituoso",
+      "Contatar empresa de manutenção: SCI - WhatsApp (48) 99144-3159"
+    ]
+  }
+}
